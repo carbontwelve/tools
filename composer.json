@@ -1,7 +1,7 @@
 {
     "name": "carbontwelve/tools",
     "description": "Collection of code snippets that I have found useful from the internet",
-    "keywords" : "tools, strings, numbers, time",
+    "keywords" : ["tools", "strings", "numbers", "time"],
     "authors": [
         {
             "name": "Simon Dann",
