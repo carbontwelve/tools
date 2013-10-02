@@ -2,6 +2,7 @@ Carbontwelve\Tools
 =====
 
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/carbontwelve/tools/badges/quality-score.png?s=a1f87159d5dacb237f9afb790cbe3225602e01a3)](https://scrutinizer-ci.com/g/carbontwelve/tools/)
+[![Build Status](https://travis-ci.org/carbontwelve/tools.png?branch=master)](https://travis-ci.org/carbontwelve/tools)
 
 This is a growing collection of code snippets that I have stumbled upon on the internet during my day-to-day coding,
 many may have bugs, which are documented within the unit-tests. I try to write full tests for each snippet that I
