@@ -1,12 +1,14 @@
 {
     "name": "carbontwelve/tools",
     "description": "Collection of code snippets that I have found useful from the internet",
+    "keywords" : "tools, strings, numbers, time",
     "authors": [
         {
             "name": "Simon Dann",
             "email": "simon.dann@gmail.com"
         }
     ],
+    "license": "MIT",
     "require": {
         "php": ">=5.3.0"
     },
