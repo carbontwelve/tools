@@ -88,6 +88,17 @@ class PathClassTest extends PHPUnit_Framework_TestCase {
     public function testPathSizeForDir()
     {
         /** @var $temptation Icecave\Temptation\Temptation */
+        //$temptation = new Temptation;
+    }
+
+    public function testPathCountForFile()
+    {
+        /** @var $temptation Icecave\Temptation\Temptation */
         $temptation = new Temptation;
+        $file       = $temptation->createFile();
+        file_put_contents($file->path(), 'This is my temp file.');
+
+        $this->pathClass = new Path( $file->path() );
+        $this->assertEquals( 1, $this->pathClass->count() );
     }
 }
