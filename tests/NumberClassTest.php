@@ -132,6 +132,9 @@ class NumberClassTest extends PHPUnit_Framework_TestCase {
     /** Test number to words up to 99 */
     public function testToWords()
     {
+        $this->numberClass = new Number( 0 );
+        $this->assertEquals( 'Zero', $this->numberClass->toWords() );
+
         $this->numberClass = new Number( 1 );
         $this->assertEquals( 'One', $this->numberClass->toWords() );
 
