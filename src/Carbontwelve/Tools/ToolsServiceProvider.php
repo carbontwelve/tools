@@ -1,6 +1,7 @@
 <?php namespace Carbontwelve\Tools;
 
 use Illuminate\Support\ServiceProvider;
+USE Carbontwelve\Tools\Services\Format;
 
 class ToolsServiceProvider extends ServiceProvider {
 
@@ -18,7 +19,10 @@ class ToolsServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		//
+        $this->app['carbontwelve.format'] = $this->app->share(function($app)
+            {
+                return new Format();
+            });
 	}
 
 	/**
